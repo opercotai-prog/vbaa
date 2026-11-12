@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>{{ title }}</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 800px; margin: 2em auto; padding: 0 1em; line-height: 1.5; }
+  pre { background: #f4f4f4; padding: 1em; border-radius: 6px; overflow-x: auto; }
+  code { font-family: ui-monospace, monospace; }
+  .warn { background: #fff3cd; border-left: 4px solid #f0ad4e; padding: 0.5em 1em; margin: 1em 0; }
+  .meta { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<a href="index.html">← Назад к списку</a>
+<h1>{{ title }}</h1>
+<p class="meta">Категория: {{ category }}</p>
+<p>{{ description }}</p>
+{% for w in warnings %}<div class="warn">⚠️ {{ w }}</div>{% endfor %}
+{{ body | safe }}
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Сгенерированный сайт (собирается из content/)
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / редакторы
+.DS_Store
+.idea/
+.vscode/
