@@ -1,3 +1,5 @@
 python-frontmatter
 markdown
 jinja2
+pandas
+streamlit
